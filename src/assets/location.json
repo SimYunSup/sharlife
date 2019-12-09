@@ -1,0 +1,52 @@
+{
+  "locationList": [
+    {
+      "id": 1,
+      "name": "공학2관",
+      "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학2관",
+      "parkingFee": 1000,
+      "type": 1,
+      "supportsNFC": true
+    },
+    {
+      "id": 2,
+      "name": "공학1관",
+      "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학1관",
+      "parkingFee": 600,
+      "type": 0,
+      "supportsNFC": false
+    },
+    {
+      "id": 3,
+      "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학3관",
+      "name": "공학3관",
+      "parkingFee": 1000,
+      "type": 1,
+      "supportsNFC": false
+    }
+  ],
+  "1": {
+    "id": 1,
+    "name": "공학2관",
+    "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학2관",
+    "parkingFee": 1000,
+    "type": 1,
+    "supportsNFC": true
+  },
+  "2": {
+    "id": 2,
+    "name": "공학1관",
+    "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학1관",
+    "parkingFee": 600,
+    "type": 0,
+    "supportsNFC": false
+  },
+  "3": {
+    "id": 3,
+    "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학3관",
+    "name": "공학3관",
+    "parkingFee": 1000,
+    "type": 1,
+    "supportsNFC": false
+  }
+}
