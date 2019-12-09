@@ -1,5 +1,5 @@
 <template>
-  <third-layout :title="title">
+  <third-layout title="NFC 태그">
     <div>
       <div class="absolute-top flex flex-center" style="height: 60%">
         <q-icon name="fas fa-archive" class="absolute" style="font-size: 10em; color:grey; opacity: 0.7"/>

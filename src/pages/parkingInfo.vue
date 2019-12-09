@@ -17,23 +17,23 @@
     <div class="q-mt-xl q-mb-md text-h6 text-center">
       주차요금은 1시간당 {{ location.parkingFee }}원입니다.
     </div>
-    <div class="q-my-md flex flex-center">
+    <div class="q-my-sm flex flex-center">
       <q-chip
-        size="lg"
-        color="info"
-        align="center">
-        {{ location.type ? '공용' : '사유'}} 주차장
-      </q-chip>
-    </div>
-    <div class="q-my-md flex flex-center">
-      <q-chip
-        size="lg"
+        size="md"
         :color="location.supportsNFC ? 'primary' : 'danger'"
         align="center">
         NFC 사용 {{ location.supportsNFC ? '가능' : '불가' }}
       </q-chip>
     </div>
-    <div class="absolute-bottom vertical-middle flex flex-center" style="height: 40%">
+    <div class="q-my-md flex flex-center">
+      <q-chip
+        size="md"
+        color="info"
+        align="center">
+        {{ location.type ? '사유' : '공유'}} 주차장
+      </q-chip>
+    </div>
+    <div class="absolute-bottom vertical-middle flex flex-center" style="height: 20%">
       <q-btn
         color="primary"
         label="결제하기"
