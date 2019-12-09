@@ -1,20 +1,6 @@
 
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/MyLayout.vue')
-  },
-  {
-    path: '/main',
-    component: () => import('layouts/MyLayout.vue'),
-    children: [
-      {
-        path: ':mode',
-        component: () => import('pages/Index.vue')
-      }
-    ]
-  },
-  {
     path: '/ticket',
     component: () => import('layouts/MyLayout.vue'),
     children: [
@@ -70,6 +56,20 @@ const routes = [
       }
     ],
     props: { title: '메뉴' }
+  },
+  {
+    path: '/',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('pages/Index.vue')
+      },
+      {
+        path: 'lists',
+        component: () => import('pages/Index.vue')
+      }
+    ]
   }
 ]
 

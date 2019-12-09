@@ -85,7 +85,7 @@ export default {
           startTime: this.startTime,
           endTime: this.endTime
         })
-        this.$router.push('/share')
+        this.$router.go(-1)
       }
     }
   },

@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="absolute-bottom vertical-middle flex flex-center" style="height: 20%">
-        <q-btn to="/ticket" color="primary" label="돌아가기" class="q-mt-md"/>
+        <q-btn color="primary" label="돌아가기" class="q-mt-md" @click.prevent="goBack"/>
       </div>
     </div>
   </third-layout>
@@ -23,6 +23,11 @@ export default {
   data () {
     return {
       loadingState: true
+    }
+  },
+  methods: {
+    goBack () {
+      this.$router.go(-1)
     }
   },
   computed: {

@@ -42,7 +42,7 @@ export default {
       parkingLists: 'getLocations'
     }),
     tab () {
-      return this.$route.params.mode
+      return this.$route.path === '/' ? 'map' : 'lists'
     }
   },
   components: {

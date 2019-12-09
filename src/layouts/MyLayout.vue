@@ -10,14 +10,14 @@
       <q-tabs
         dense
         align="justify"
-        v-if="path === 'main'"
+        v-if="path === '' || path === 'lists'"
         v-model="subTab">
         <q-route-tab
-          to="/main/map"
+          to="/"
           name="map"
           label="지도"/>
         <q-route-tab
-          to="/main/lists"
+          to="/lists"
           name="nearPark"
           label="근처 주차장"/>
       </q-tabs>
@@ -29,7 +29,7 @@
         align="justify"
         indicator-color="yellow"
         class="bg-primary text-white shadow-2">
-        <q-route-tab to="/main/map" name="main" icon="home" label="메인" />
+        <q-route-tab to="/" name="main" icon="home" label="메인" />
         <q-route-tab to="/ticket" name="ticket" icon="receipt" label="이용권" />
         <q-route-tab to="/share" name="share" icon="cloud" label="주차장 공유" />
         <q-route-tab to="/menu" name="menu" icon="menu" label="메뉴" />

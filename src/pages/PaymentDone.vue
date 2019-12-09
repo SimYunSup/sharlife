@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="absolute-bottom vertical-middle flex flex-center" style="height: 40%">
-        <q-btn to="/main/map" color="primary" label="돌아가기" class="q-mt-md"/>
+        <q-btn color="primary" label="돌아가기" class="q-mt-md" @click.prevent="goMain"/>
       </div>
     </div>
   </third-layout>
@@ -31,6 +31,11 @@ export default {
   data () {
     return {
       loadingState: true
+    }
+  },
+  methods: {
+    goMain () {
+      this.$router.go(-3)
     }
   },
   computed: {

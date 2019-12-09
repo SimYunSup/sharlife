@@ -14,7 +14,7 @@
       "address": "충청남도 천안시 동남구 병천면 충절로 1600 공학1관",
       "parkingFee": 600,
       "type": 0,
-      "supportsNFC": false
+      "supportsNFC": true
     },
     {
       "id": 3,
