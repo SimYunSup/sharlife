@@ -23,7 +23,7 @@
             size="sm"
             color="secondary"
             align="center">
-            {{ list.type ? '사유' : '공용'}} 주차장
+            {{ list.type ? '공용' : '사유'}} 주차장
           </q-chip>
         </q-item-label>
       </q-item-section>
