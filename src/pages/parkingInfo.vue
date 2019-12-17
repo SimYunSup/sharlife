@@ -30,8 +30,26 @@
         size="md"
         color="info"
         align="center">
-        {{ location.type ? '사유' : '공유'}} 주차장
+        {{ location.type ? '공용' : '사유'}} 주차장
       </q-chip>
+    </div>
+    <div
+      class="row q-my-sm"
+      v-if="!(location.startTime === undefined || location.startTime === null)">
+      <q-field class="col-6" label="공유 시작 시간" stack-label>
+        <template #control>
+          <div class="self-center full-width no-outline" tabindex="0">
+            {{ location.startTime }}
+          </div>
+        </template>
+      </q-field>
+      <q-field class="col-6" label="공유 종료 시간" stack-label>
+        <template #control>
+          <div class="self-center full-width no-outline" tabindex="0">
+            {{ location.endTime }}
+          </div>
+        </template>
+      </q-field>
     </div>
     <div class="absolute-bottom vertical-middle flex flex-center" style="height: 20%">
       <q-btn

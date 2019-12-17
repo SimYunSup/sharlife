@@ -16,7 +16,7 @@
         lazy-rules
         :rules="[ val => val && val.length > 0 || '이 칸을 채우세요']"/>
       <div class="row q-my-md">
-        <q-input ref="startTime" class="col-6" filled v-model="startTime" label="공유 시작 시간" mask="time" :rules="['time']">
+        <q-input ref="startTime" class="col-6" v-model="startTime" label="공유 시작 시간" mask="time" :rules="['time']">
           <template v-slot:append>
             <q-icon name="access_time" class="cursor-pointer">
               <q-popup-proxy transition-show="scale" transition-hide="scale">
@@ -25,7 +25,7 @@
             </q-icon>
           </template>
         </q-input>
-        <q-input ref="endTime" class="col-6" filled v-model="endTime" label="공유 종료 시간" mask="time" :rules="['time']">
+        <q-input ref="endTime" class="col-6" v-model="endTime" label="공유 종료 시간" mask="time" :rules="['time']">
           <template v-slot:append>
             <q-icon name="access_time" class="cursor-pointer">
               <q-popup-proxy transition-show="scale" transition-hide="scale">
